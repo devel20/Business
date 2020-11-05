@@ -389,8 +389,6 @@ button:hover {
 
 .work__inner {
 	width: 170px;
-	/*margin: 0 auto;		*/
-
 	font-family: 'HelveticaNeueCyr-Bold';
 	color: #fff;
 	position: absolute;
@@ -499,7 +497,7 @@ button:hover {
 .form__name {}
 .form__number {}
 .form__company-name {}
-.form__butn-submit input {
+.form__butn-submit button {
 	font-family: 'HelveticaNeueCyr-Bold';
 	background: #de2b24;
 	margin: 28px 0 70px 0;
@@ -507,7 +505,7 @@ button:hover {
 	width: auto;
 	padding: 14px 36px;
 } 
-.form__butn-submit input:hover {
+.form__butn-submit button:hover {
 	border: 1px solid #de2b45;
 	box-shadow: 0 0 5px #de2b24;
 }
@@ -589,11 +587,12 @@ button:hover {
 	display: block;
 }
 .getIn__input input {
+	font-family: 'Open Sans', sans-serif;
 	padding: 20px;
 	margin: 32px 0 27px 0;
 	width: 100%;
 }
-.getIn__butn input {
+.getIn__butn button {
 	font-family: 'HelveticaNeueCyr-Bold';
 	font-size: 17px;
 	color: #fff;
@@ -603,7 +602,7 @@ button:hover {
 	border-radius: 4px;
 	transition: all 0.3s linear;
 }
-.getIn__butn input:hover {
+.getIn__butn button:hover {
 	border-color: #de2b24;
 }
 
@@ -659,11 +658,10 @@ button:hover {
 		display: block;
 		position: fixed;
 		z-index: 2;
-		top: 0;
+		top: 32px;
 		right: -100%;
-		width: 100%;
-		height: 100%;
-		background: #38c7eb;
+		height: 64%;
+		background: rgba(81, 81, 81, 0.8);
 		text-align: center;
 		transition: all 0.3s linear;
 	}
@@ -680,7 +678,7 @@ button:hover {
 		margin: 14px 2px 0 0; 
 	}
 	.header__burger span {
-		background: #424242;
+		background: #000;
 		position: absolute;
 		width: 100%;
 		height: 2px;
@@ -690,7 +688,7 @@ button:hover {
 	.header__burger:before,
 	.header__burger:after {
 		content: '';
-		background: #424242;
+		background: #000;
 		position: absolute;
 		width: 100%;
 		height: 2px;
@@ -715,17 +713,31 @@ button:hover {
 		transform: scale(0);
 	}
 	.header__inner.active {
+		top: 32px;
 		right: 0;
+	}
+	.header__butn button {
+		margin: 15px 0 0 0;
 	}
 	.menu__list {
 		display: block;
 		padding: 0;
 	}
 	.menu__list li {
-		margin: 40px 0 0 0;
+		margin: 30px 0 0 0;
+		padding: 0 45px 0 20px;
+		text-align: left;
+	}
+	.menu__list li:after {
+		display: none;
 	}
 	.menu__link {
-		font-size: 30px;
+		font-size: 25px;
+		color: #fff;
+	}
+	/*----------*/
+	.intro__butn button {
+		font-size: 18px;
 	}
 	/*----------*/
 	.about__item {
